@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Kết quả đăng ký";
+}
+
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h2 class="mb-3 text-success">Đăng ký thành công</h2>
+
+        <p><strong>MSSV:</strong> @ViewBag.MSSV</p>
+        <p><strong>Họ tên:</strong> @ViewBag.HoTen</p>
+        <p><strong>Chuyên ngành đã đăng ký:</strong> @ViewBag.ChuyenNganh</p>
+        <p><strong>Số lượng sinh viên cùng chuyên ngành:</strong> @ViewBag.Count</p>
+
+        <a class="btn btn-primary mt-3" href="/Student/Index">← Quay lại đăng ký</a>
+    </div>
+</div>
